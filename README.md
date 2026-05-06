@@ -1,2 +1,0 @@
-# Termsa
-Terms and conditions 
