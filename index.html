@@ -64,6 +64,175 @@
             border-top: 1px solid #eee;
             padding-top: 10px;
         }
+         .section-card {
+            background-color: var(--card-bg);
+            border-radius: 14px;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            border: 1px solid var(--border-color);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .icon-box {
+            font-size: 22px;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+
+       :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-green: #10b981;
+            --text-main: #f8fafc;
+            --text-sub: #94a3b8;
+            --border-color: #334155;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 650px;
+            padding: 20px;
+            box-sizing: border-box;
+            padding-bottom: 40px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 16px;
+        }
+
+        .back-btn {
+            background-color: var(--card-bg);
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: 0.2s;
+        }
+
+        .back-btn:hover {
+            background-color: var(--border-color);
+        }
+
+        h1 {
+            font-size: 22px;
+            margin: 0 0 0 16px;
+            color: var(--text-main);
+        }
+
+        .banner-alert {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid var(--accent-green);
+            color: var(--accent-green);
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+
+        .section-card {
+            background-color: var(--card-bg);
+            border-radius: 14px;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            border: 1px solid var(--border-color);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .icon-box {
+            font-size: 22px;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .card-text {
+            color: var(--text-sub);
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .card-text ul, .card-text ol {
+            padding-left: 20px;
+            margin: 8px 0;
+        }
+
+        .card-text li {
+            margin-bottom: 6px;
+        }
+
+        .tip-box {
+            background: rgba(245, 158, 11, 0.1);
+            border-left: 3px solid #f59e0b;
+            color: #fbbf24;
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            border: 1px solid var(--accent-green);
+        }
+
+        .contact-link {
+            color: var(--accent-green);
+            word-break: break-all;
+            text-decoration: none;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 <body>
@@ -79,7 +248,7 @@
         <p>To ensure platform stability and fair usage, the following limits apply to all standard accounts:</p>
         <ul class="limitations-list">
             <li><strong>Product Limit:</strong> You are allowed to list a maximum of <strong>10 products</strong> only.</li>
-            <li><strong>Video Limit:</strong> You are allowed to upload a maximum of <strong>2 videos</strong> only.</li>
+            <li><strong>Video Limit:</strong> You are allowed to upload  <strong> videos</strong>  for entertainment.</li>
         </ul>
 
         <h2>2. Content Restrictions & Safety Policy</h2>
@@ -103,6 +272,28 @@
         <p>Our system regularly audits accounts for compliance. We reserve full rights to determine what constitutes violations or inappropriate content at our sole discretion.</p>
 
         <div class="footer">
+            <p>
+                <div class="section-card contact-card">
+        <div class="card-header">
+            <div class="icon-box">📞</div>
+            <h2 class="card-title">Contact & Support</h2>
+        </div>
+        <div class="card-text">
+            Reach out directly for assistance, questions, or business inquiries:
+            <ul>
+                <li><strong>Email:</strong> kasolenajim56@gmail.com</li>
+                <li><strong>WhatsApp:</strong> +256748128559</li>
+                <li><strong>Instagram:</strong> @hizstar</li>
+                <li><strong>Facebook Page:</strong> <a href="https://www.facebook.com/profile.php?id=61592872361194&mibextid=ZbWKwL" class="contact-link" target="_blank">Visit Facebook Page</a></li>
+                <li><strong>Facebook Account:</strong> <a href="https://www.facebook.com/profile.php?id=100076723609516&mibextid=ZbWKwL" class="contact-link" target="_blank">Visit Facebook Profile</a></li>
+                <li><strong>Web Shop Link:</strong> <a href="https://my-businessi-app.onrender.com/shop/6a465a97ba3bb41382c39402?v=1" class="contact-link" target="_blank">Visit Web Shop</a></li>
+            <li><strong>WhatsApp channel:</strong> <a href="https://whatsapp.com/channel/0029VbDOdMF65yDGw6mQMl01" class="contact-link" target="_blank">Visit WhatsApp channel</a></li>
+          </ul>
+        </div>
+    </div>
+
+</div>
+    </p>
             <p>Last Updated: 2026</p>
             <p>&copy; Hizstar Kasole Najim (Katale Reals). All rights reserved.</p>
         </div>
